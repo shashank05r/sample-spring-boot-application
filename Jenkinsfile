@@ -13,7 +13,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main',
+                git branch: 'master',
                     url: 'https://github.com/shashank05r/sample-spring-boot-application.git',
                     credentialsId: 'github-creds'
             }
